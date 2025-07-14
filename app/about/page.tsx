@@ -71,7 +71,7 @@ export default function About() {
   return (
     <div className="">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20">
+      <section className="bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -79,12 +79,12 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
               About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 CodeCraft Studio
               </span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               We are a team of passionate freelance professionals dedicated to creating 
               exceptional digital experiences that transform businesses and delight users.
             </p>
@@ -93,7 +93,7 @@ export default function About() {
       </section>
 
       {/* Who We Are Section */}
-      <section className="py-20 bg-white">
+      <section className="pt-14 pb-6 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -101,10 +101,10 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
               Who We Are
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
               CodeCraft Studio is a collective of skilled freelance developers, designers, and 
               digital strategists who share a passion for creating innovative solutions. 
               With combined years of experience in the tech industry, we bring together 
@@ -115,7 +115,7 @@ export default function About() {
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {values.map((value, index) => (
@@ -133,7 +133,7 @@ export default function About() {
                     <CardTitle className="text-xl">{value.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 text-center">
+                    <p className="text-gray-600 dark:text-gray-400 text-center">
                       {value.description}
                     </p>
                   </CardContent>
@@ -145,7 +145,7 @@ export default function About() {
       </section>
 
       {/* Our Expertise */}
-      <section className="py-20 bg-white">
+      <section className="py-5 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -153,7 +153,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
               Our Expertise
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -179,7 +179,7 @@ export default function About() {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600">{skill.description}</p>
+                    <p className="text-gray-600 dark:text-gray-400">{skill.description}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -189,7 +189,7 @@ export default function About() {
       </section>
 
       {/* Tech Stack */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -197,10 +197,10 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
               Technologies We Use
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
               We stay current with the latest technologies to deliver modern, 
               scalable, and efficient solutions.
             </p>
@@ -226,7 +226,7 @@ export default function About() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+      <section className="pb-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -234,7 +234,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-400 mb-6">
               Why Choose Us?
             </h2>
           </motion.div>

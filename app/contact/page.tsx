@@ -60,7 +60,7 @@ export default function Contact() {
   return (
     <div className="">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20">
+      <section className="bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -68,12 +68,12 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
               Get in <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Touch
               </span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Ready to bring your ideas to life? Let's discuss your project and create 
               something amazing together.
             </p>
@@ -82,7 +82,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -153,7 +153,7 @@ export default function Contact() {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-800 dark:to-purple-800 hover:from-blue-700 hover:to-purple-700"
                     >
                       {isSubmitting ? (
                         <>
@@ -180,10 +180,10 @@ export default function Contact() {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                   Let's start a conversation
                 </h2>
-                <p className="text-gray-600 mb-8">
+                <p className="text-gray-600 dark:text-gray-400 mb-8">
                   We're here to help you bring your digital vision to life. Whether you need 
                   a new website, mobile app, or digital strategy, we're ready to discuss your project.
                 </p>
@@ -195,8 +195,8 @@ export default function Contact() {
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">hello@codecraftstudio.com</p>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Email</h3>
+                    <p className="text-gray-600 dark:text-gray-400">hello@codecraftstudio.com</p>
                   </div>
                 </div>
 
@@ -205,8 +205,8 @@ export default function Contact() {
                     <Clock className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Response Time</h3>
-                    <p className="text-gray-600">We typically respond within 24 hours</p>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Response Time</h3>
+                    <p className="text-gray-600 dark:text-gray-400">We typically respond within 24 hours</p>
                   </div>
                 </div>
 
@@ -215,42 +215,42 @@ export default function Contact() {
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Location</h3>
-                    <p className="text-gray-600">Remote-first, serving clients worldwide</p>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Location</h3>
+                    <p className="text-gray-600 dark:text-gray-400">Remote-first, serving clients worldwide</p>
                   </div>
                 </div>
               </div>
 
               {/* Process Steps */}
-              <div className="bg-gray-50 rounded-lg p-6 mt-8">
-                <h3 className="font-semibold text-gray-900 mb-4">What happens next?</h3>
+              <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mt-8">
+                <h3 className="font-semibold text-gray-900 text-gray-50 mb-4">What happens next?</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="p-1 bg-green-100 rounded-full">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
+                    <div className="p-1 bg-green-100 dark:bg-green-300 rounded-full">
+                      <CheckCircle className="h-4 w-4 text-green-600 dark:text-green-700" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
                         <span className="font-medium">1.</span> We'll review your message and get back to you within 24 hours
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="p-1 bg-green-100 rounded-full">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
+                    <div className="p-1 bg-green-100 dark:bg-green-300 rounded-full">
+                      <CheckCircle className="h-4 w-4 text-green-600 dark:text-green-700" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
                         <span className="font-medium">2.</span> We'll schedule a consultation to discuss your project in detail
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="p-1 bg-green-100 rounded-full">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
+                    <div className="p-1 bg-green-100 dark:bg-green-300 rounded-full">
+                      <CheckCircle className="h-4 w-4 text-green-600 dark:text-green-700" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
                         <span className="font-medium">3.</span> We'll provide you with a detailed proposal and timeline
                       </p>
                     </div>
@@ -263,7 +263,7 @@ export default function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -271,7 +271,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               Frequently Asked Questions
             </h2>
           </motion.div>
@@ -305,7 +305,7 @@ export default function Contact() {
                     <CardTitle className="text-lg">{faq.question}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600">{faq.answer}</p>
+                    <p className="text-gray-600 dark:text-gray-400">{faq.answer}</p>
                   </CardContent>
                 </Card>
               </motion.div>

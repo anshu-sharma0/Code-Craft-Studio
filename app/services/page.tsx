@@ -92,7 +92,7 @@ export default function Services() {
   return (
     <div className="">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20">
+      <section className="bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -100,12 +100,12 @@ export default function Services() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
               Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Services
               </span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               From concept to deployment, we provide comprehensive digital solutions
               that drive business growth and user engagement.
             </p>
@@ -114,7 +114,7 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {services.map((service, index) => (
@@ -142,12 +142,12 @@ export default function Services() {
                     <div className="space-y-6">
                       {/* Features */}
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-3">What's Included:</h4>
+                        <h4 className="font-semibold text-gray-900 dark:text-gray-300 mb-3">What's Included:</h4>
                         <ul className="space-y-2">
                           {service.features.map((feature) => (
                             <li key={feature} className="flex items-center space-x-2">
                               <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
-                              <span className="text-gray-600">{feature}</span>
+                              <span className="text-gray-600 dark:text-gray-400">{feature}</span>
                             </li>
                           ))}
                         </ul>
@@ -155,7 +155,7 @@ export default function Services() {
 
                       {/* Technologies */}
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-3">Technologies:</h4>
+                        <h4 className="font-semibold text-gray-900 dark:text-gray-300 mb-3">Technologies:</h4>
                         <div className="flex flex-wrap gap-2">
                           {service.technologies.map((tech) => (
                             <Badge key={tech} variant="secondary" className="text-xs">
@@ -174,7 +174,7 @@ export default function Services() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="pb-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -182,7 +182,7 @@ export default function Services() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
               Our Agile Process
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -241,10 +241,10 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Ready to Start Your Project?
             </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-400 mb-8">
               Let's discuss your requirements and create a custom solution that fits your needs and budget.
             </p>
             <Button asChild size="lg" variant="secondary">
