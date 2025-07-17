@@ -182,7 +182,7 @@ export default function Services() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 pt-8">
               Our Agile Process
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -244,7 +244,7 @@ export default function Services() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Ready to Start Your Project?
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-8">
+            <p className="text-gray-200 mb-8">
               Let's discuss your requirements and create a custom solution that fits your needs and budget.
             </p>
             <Button asChild size="lg" variant="secondary">

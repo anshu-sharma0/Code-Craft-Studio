@@ -223,7 +223,7 @@ export default function Contact() {
 
               {/* Process Steps */}
               <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mt-8">
-                <h3 className="font-semibold text-gray-900 text-gray-50 mb-4">What happens next?</h3>
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-4">What happens next?</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <div className="p-1 bg-green-100 dark:bg-green-300 rounded-full">

@@ -140,7 +140,7 @@ export default function Projects() {
                     <div className="space-y-4">
                       {/* Technologies */}
                       <div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Technologies Used:</h4>
+                        <h4 className="font-semibold text-gray-900 dark:text-gray-200 mb-2">Technologies Used:</h4>
                         <div className="flex flex-wrap gap-2">
                           {project.technologies.map((tech) => (
                             <Badge key={tech} variant="secondary" className="text-xs">
